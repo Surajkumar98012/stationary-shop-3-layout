@@ -1,0 +1,849 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My stationary Shop</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="searchbar.css">
+  <link rel="stylesheet" type="text/css" href="shop.css">
+ <style type="text/css">
+ </style>
+
+ 
+</head>
+<body style="padding: 0; margin:0;background-color: #cf86e3 ;">
+
+
+
+ <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background-color:rgba(255,255,255,0.3);margin-top: -10px;" >
+        <div class="col-md-1"></div>
+          <a style="font-size: 28px;font-family: curlz MT; font-weight: bolder;color: indigo;" class="navbar-brand" href="#" >OWNSHOP</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <div class="navbar-toggler-icon"></div>
+  </button>
+    
+  <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent" style="padding-top: 8px;">
+    <ul class="navbar-nav">
+
+         
+
+
+         <li class="nav-item active">
+        <a style="color: white" class="nav-link" href="#">
+
+          <div id="wrap">
+        <form action="" autocomplete="on">
+        <input id="search" name="search" type="text" placeholder="Looking For Something ?"><input id="search_submit" value="Rechercher" type="submit">
+        </form>
+      </div>
+
+
+          <!-- <span class="sr-only">(current)</span> --></a>
+      </li> 
+
+
+
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Get the app <!-- <span class="sr-only">(current)</span> --></a>
+      </li>
+
+
+     
+<div class="dropdown">
+  <button  class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Support
+  </button>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    <a class="dropdown-item" href="#">Feedback</a>
+    <a class="dropdown-item" href="#">Helpcenter</a>
+    <a class="dropdown-item" href="#">Message Us</a>
+  </div>
+</div>
+
+
+  
+      <li class="nav-item">
+        <!-- <a href="#">Disabled</a> -->
+        <a class="nav-link disabled"  href="#"><span style="border:1px solid red;padding: 8px;color: red;"> Sign in </span></a>
+      </li>
+          <button type="button" class="btn btn-danger navbar-btn" data-toggle="modal" data-target="#myModal">Sign Up</button>
+    </ul>
+    
+  </div>
+ 
+
+
+</nav>
+
+   
+       <div class="modal fade" id="myModal">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <div class="container-fluid">
+            <div class="row">
+              <div class="col-sm-6">
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h5 class="modal-title" style="color: red;padding-left: 50px;">Create Your Account</h5>
+          
+      
+        </div>
+        <h6 style="font-size: 14px;">Set up an account today and start receiving exclusive deals and discounts reserved only for you!<h6>
+        <!-- Modal body -->
+        <div class="modal-body">
+          <div style="border:1px solid black;padding-top: 10px;padding-left: 60px;">
+                    <img  class="img-fluid" src="1.png">
+                    <p style="margin-top: -20px;margin-left: -50px; text-align: center;"> Sign in with Google</p>
+            </div>
+            <br/>
+            <div style="border:1px solid black;padding-top: 10px;padding-left: 60px;background-color: rgb(59,89,152);">
+                    <img  class="img-fluid" src="2.png">
+                    <p style="margin-top: -20px;margin-left: -50px;color: white;text-align: center;"> Sign in with Facebook</p>
+            </div>
+              </div>
+              <hr>
+              <h6 style="text-align: center;color: grey;">or register with E-mail:</h6>
+            
+                <form action="/action_page.php">
+                    <div class="form-group">
+    
+      <input type="email" class="form-control" id="name" placeholder="Enter First Name" name="Firstname">
+    </div>
+      <div class="form-group">
+    
+      <input type="email" class="form-control" id="name" placeholder="Enter Last Name" name="Lastname">
+    </div>
+    <div class="form-group">
+    
+      <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+    </div>
+    <div class="form-group">
+    
+      <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pwd">
+    </div>
+     <div class="form-group">
+    
+      <input type="password" class="form-control" id="pwd" placeholder="Confirm password" name="pwd">
+    </div>
+    <div class="checkbox">
+      <label><input type="checkbox" name="remember"> Remember me</label>
+    </div>
+    <button style="margin-left: 110px;" type="submit" class="btn btn-success">Create Account</button>
+  </form>
+         </div>
+
+         <div class="col-md-6"style="background-image: url(11.jpg);padding-top: 120px;">
+          <img style="margin-left: 150px;" src="3.png">
+          <h4 style="text-align: center;font-weight: bold;">Signed-in<br> Member Get Excess To:</h4>
+          <br>
+          <ul style="font-weight: bold;">
+            <li>Thousands of Member-only deals</li>
+            <br>
+            <li>Lower prices</li>
+            <br>
+            <li>Faster Delivery</li>
+            <br>
+            <li>Amazing Offers</li>
+            <br>
+            <li>Upconing Deals</li>
+          </ul>
+         </div>
+            
+          </div>
+        </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer" style="text-align: center;">
+          <h6 style=" font-size: 18px;">By proceeding, you agree to our Terms of Use and confirm you have read our Privacy and Cookie Statement.</h6>
+          <button style="align-items: center;" type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+          
+          </div>
+         </div>
+        </div>
+<br>
+<br>
+<br>
+
+ <p style="opacity: 0.8; background-color: black;text-align: center;font-size: 250%;font-weight: bolder;color: white;text-shadow: 2px 2px 5px red; ">The Stationary Shop</p>
+
+ <div class="container-fluid " style="background-image: linear-gradient" >
+    
+     
+  
+      <!-- Carousl & OTHER -->
+     <div class="row">
+        <div class="col-lg-6 col-md-6 col-sm-12">
+          <div style="background-image: linear-gradient(to top right,orange,black,yellow);border:solid white 0px;"><p style="text-align: center;color: orange;text-shadow: 2px 2px 7px skyblue;font-size: 170%;padding: 5px;font-weight: bold; ">TOP SELLERS</p> </div>
+                      
+                        <div id="demo" class="carousel slide" data-ride="carousel">
+                  <ul class="carousel-indicators">
+                    <li data-target="#demo" data-slide-to="0" class="active"></li>
+                    <li data-target="#demo" data-slide-to="1"></li>
+                    <li data-target="#demo" data-slide-to="2"></li>
+                  </ul>
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <a href="">  <img src="caro/parker.jpg" alt="image 1" width="100%" height="400vh" ></a>
+                      <div class="carousel-caption">
+                        <h3 style="color: black; text-shadow:0 0 5px white;">Parker Stylish Pen</h3>
+                        <p style="background-color: lightgrey;opacity: 60%; color: black;font-weight: bold;">recently on demand</p>
+                      </div>   
+                    </div>
+                    <div class="carousel-item">
+                     <a href=""> <img src="caro/crayons.jpg" alt="image 2" width="100%" height="400vh" > </a>
+                      <div class="carousel-caption">
+                        <h3 style="background-color: white;color: black;opacity: 60%;font-weight: bold;">Oil Pastel Crayons</h3>
+                        <p style="background-color: grey; text-shadow:0 0 5px black">A set of 50,Many shades of a single color </p>
+                      </div>   
+                    </div>
+                    <div class="carousel-item">
+                     <a href=""> <img src="caro/copies.jpg" alt="Image 3" width="100%" height="400vh"> </a>
+                      <div class="carousel-caption">
+                      <h3 style="background-color: white;color: black;opacity: 60%;font-weight: bold;">Light Note Books</h3>
+                        <p style="background-color: grey;opacity: 70%;">Best Quality Paper</p>
+                      </div>   
+                    </div>
+                  </div>
+                  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                  </a>
+                  <a class="carousel-control-next" href="#demo" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                  </a>
+                </div>
+
+        </div>
+
+        <div class="col-lg-6 col-md-6 col-sm-12">
+           <h2 style="color: orange; text-shadow:0px 0px 5px black; background-image: linear-gradient(yellow,green);border:0.1px solid black;text-align: center;padding: 5px;">Best Combos </h2>
+           		<!-- 1st Row -->
+           <div class="container-fluid pb-2">
+       <div class="row ">
+        <div class="container col-lg-6 col-md-6 col-sm-6 col-6 zoom ">
+          <div class="card "  style="width: 100%; ">
+           <div class="card-img-top">
+             <img src="combo/c1.jpeg" class="image" style="height: 200px;width:100%;">
+              <div class="corner"><a href=""><button style="border:none; background-color: transparent;"><img src="symbols/cart.png" width="60px" height="60px" ></button></a> </div>
+              <div class="middle">
+            <div class="text">  <a href=""><button style="background-color:purple;border:none;width:120px;height: 48px;opacity:0.8;color:white;">Buy Now</button></a></div>
+           </div>
+           
+           </div>
+         </div>
+        </div>
+
+        <div class="container col-lg-6 col-md-6 col-sm-6 col-6 zoom ">
+          <div class="card "  style="width: 100%; ">
+           <div class="card-img-top">
+             <img src="combo/c2.jpeg" class="image" style="height: 200px;width:100%;">
+               <div class="corner"><a href=""><button style="border:none; background-color: transparent;"><img src="symbols/cart.png" width="60px" height="60px" ></button></a> </div>
+            <div class="middle">
+            <div class="text"> <a href=""><button style="background-color:purple;border:none;width:120px;height: 48px;opacity:0.8;color:white;">Buy Now</button></a></div>
+           </div>
+           </div>
+         </div>
+        </div>
+          
+              </div>
+              
+            </div>
+            	<!-- 2nd row -->
+            	 <div class="container-fluid">
+       <div class="row ">
+        <div class="container col-lg-6 col-md-6 col-sm-6 col-6 zoom" >
+          <div class="card "  style="width: 100%; ">
+           <div class="card-img-top">
+             <img src="combo/c3.jpeg" class="image" style="height: 200px;width:100%;">
+              <div class="corner"><a href=""><button style="border:none; background-color: transparent;"><img src="symbols/cart.png" width="60px" height="60px" ></button></a> </div>
+              <div class="middle">
+            <div class="text">  <a href=""><button style="background-color:purple;border:none;width:120px;height: 48px;opacity:0.8;color:white;">Buy Now</button></a></div>
+           </div>
+           
+           </div>
+         </div>
+        </div>
+
+        <div class="container col-lg-6 col-md-6 col-sm-6 col-6 zoom">
+          <div class="card "  style="width: 100%; ">
+           <div class="card-img-top">
+             <img src="combo/c4.jpeg" class="image" style="height: 200px;width:100%;">
+               <div class="corner"><a href=""><button style="border:none; background-color: transparent;"><img src="symbols/cart.png" width="60px" height="60px" ></button></a> </div>
+            <div class="middle">
+            <div class="text"> <a href=""><button style="background-color:purple;border:none;width:120px;height: 48px;opacity:0.8;color:white;">Buy Now</button></a></div>
+           </div>
+           </div>
+         </div>
+        </div>
+          
+              </div>
+              
+            </div>
+
+    	</div>
+    
+        </div></div> 
+  
+
+      <p style="background-color:purple;text-align: center;font-size: 150%;margin-top: 10px;color:white;text-shadow: 2px 2px 5px white;  ">All Products</p>
+
+                  <!-- Row 1 -->
+
+<div class="container-fluid ">
+<div class="row ">
+        <div class="container col-lg-3 col-md-4 col-sm-6 col-6 zoom bot">
+          <div class="card "  style="width: 100%; ">
+           <div class="card-img-top">
+             <img src="all products/apsara.jpg" class="image" style="height: 200px;width:100%;">
+              <div class="corner"><a href=""><button style="border:none; background-color: transparent;"><img src="symbols/cart.png" width="60px" height="60px" ></button></a> </div>
+              <div class="middle">
+            <div class="text">  <a href=""><button style="background-color:purple;border:none;width:120px;height: 48px;opacity:0.8;color:white;">Buy Now</button></a></div>
+           </div>
+           
+           </div>
+          
+           <div class="card-body">
+            <center>Apsara Pencil (10)</center>
+           </div>
+         </div>
+        </div>
+
+        <div class="container col-lg-3 col-md-4 col-sm-6 col-6 zoom bot">
+          <div class="card "  style="width: 100%; ">
+           <div class="card-img-top">
+             <img src="all products/butterflow.jpg" class="image" style="height: 200px;width:100%;">
+               <div class="corner"><a href=""><button style="border:none; background-color: transparent;"><img src="symbols/cart.png" width="60px" height="60px" ></button></a> </div>
+            <div class="middle">
+            <div class="text"> <a href=""><button style="background-color:purple;border:none;width:120px;height: 48px;opacity:0.8;color:white;">Buy Now</button></a></div>
+           </div>
+
+           <div class="card-body">
+            <center>Butterfloe pen (12) </center>
+           </div>
+           </div>
+         </div>
+        </div>
+
+        <div class="container col-lg-3 col-md-4 col-sm-6 col-6 zoom bot" >
+          <div class="card "  style="width: 100%; ">
+           <div class="card-img-top">
+             <img src="all products/ballpens.jpg" class="image" style="height: 200px;width:100%;">
+              <div class="corner"><a href=""><button style="border:none; background-color: transparent;"><img src="symbols/cart.png" width="60px" height="60px" ></button></a> </div>
+              <div class="middle">
+            <div class="text"> <a href=""><button style="background-color:purple;border:none;width:120px;height: 48px;opacity:0.8;color:white;">Buy Now</button></a></div>
+           </div>
+           
+           </div>
+          
+           <div class="card-body">
+            <center>Ball pen (set of 7)</center>
+           </div>
+         </div>
+        </div>
+
+        <div class="container col-lg-3 col-md-4 col-sm-6 col-6 zoom bot">
+          <div class="card "  style="width: 100%; ">
+           <div class="card-img-top">
+             <img src="all products/natraj.png" class="image" style="height: 200px;width:100%;">
+              
+              <div class="corner"><a href=""><button style="border:none; background-color: transparent;"><img src="symbols/cart.png" width="60px" height="60px" ></button></a> </div>
+              <div class="middle">
+            <div class="text"> <a href=""><button style="background-color:purple;border:none;width:120px;height: 48px;opacity:0.8;color:white;">Buy Now</button></a></div>
+           </div>
+           
+           </div>
+          
+           <div class="card-body">
+            <center>Natraj Pen (set of 8)</center>
+           </div>
+         </div>
+        </div>
+
+
+
+
+
+
+</div>   
+                         <!-- Row 2 -->
+
+ 
+<div class="row ">
+        <div class="container col-lg-3 col-md-4 col-sm-6 col-6 zoom bot">
+          <div class="card "  style="width: 100%; ">
+           <div class="card-img-top">
+             <img src="all products/Fevistick.jpg" class="image" style="height: 200px;width:100%;">
+              <div class="corner"><a href=""><button style="border:none; background-color: transparent;"><img src="symbols/cart.png" width="60px" height="60px" ></button></a> </div>
+              <div class="middle">
+            <div class="text">  <a href=""><button style="background-color:purple;border:none;width:120px;height: 48px;opacity:0.8;color:white;">Buy Now</button></a></div>
+           </div>
+           
+           </div>
+          
+           <div class="card-body">
+            <center>Fevi stik (set of 12)</center>
+           </div>
+         </div>
+        </div>
+
+        <div class="container col-lg-3 col-md-4 col-sm-6 col-6 zoom bot">
+          <div class="card "  style="width: 100%; ">
+           <div class="card-img-top">
+             <img src="all products/ballpens.jpg" class="image" style="height: 200px;width:100%;">
+               <div class="corner"><a href=""><button style="border:none; background-color: transparent;"><img src="symbols/cart.png" width="60px" height="60px" ></button></a> </div>
+            <div class="middle">
+            <div class="text"> <a href=""><button style="background-color:purple;border:none;width:120px;height: 48px;opacity:0.8;color:white;">Buy Now</button></a></div>
+           </div>
+
+           <div class="card-body">
+            <center>Ball pen (set of 10)</center>
+           </div>
+           </div>
+         </div>
+        </div>
+
+        <div class="container col-lg-3 col-md-4 col-sm-6 col-6 zoom bot" >
+          <div class="card "  style="width: 100%; ">
+           <div class="card-img-top">
+             <img src="all products/notebooks.jpg" class="image" style="height: 200px;width:100%;">
+              <div class="corner"><a href=""><button style="border:none; background-color: transparent;"><img src="symbols/cart.png" width="60px" height="60px" ></button></a> </div>
+              <div class="middle">
+            <div class="text"> <a href=""><button style="background-color:purple;border:none;width:120px;height: 48px;opacity:0.8;color:white;">Buy Now</button></a></div>
+           </div>
+           
+           </div>
+          
+           <div class="card-body">
+            <center>Note books (set of 7)</center>
+           </div>
+         </div>
+        </div>
+
+        <div class="container col-lg-3 col-md-4 col-sm-6 col-6 zoom bot">
+          <div class="card "  style="width: 100%; ">
+           <div class="card-img-top">
+             <img src="all products/5subnoteb.jpg" class="image" style="height: 200px;width:100%;">
+              
+              <div class="corner"><a href=""><button style="border:none; background-color: transparent;"><img src="symbols/cart.png" width="60px" height="60px" ></button></a> </div>
+              <div class="middle">
+            <div class="text"> <a href=""><button style="background-color:purple;border:none;width:120px;height: 48px;opacity:0.8;color:white;">Buy Now</button></a></div>
+           </div>
+           
+           </div>
+          
+           <div class="card-body">
+            <center>5 Subject Note book</center>
+           </div>
+         </div>
+        </div>
+
+
+
+
+
+
+</div>
+     <!-- Row 3 -->
+
+ 
+<div class="row pb-5 ">
+        <div class="container col-lg-3 col-md-4 col-sm-6 col-6 zoom bot">
+          <div class="card "  style="width: 100%; ">
+           <div class="card-img-top">
+             <img src="all products/tape.jpg" class="image" style="height: 200px;width:100%;">
+              <div class="corner"><a href=""><button style="border:none; background-color: transparent;"><img src="symbols/cart.png" width="60px" height="60px" ></button></a> </div>
+              <div class="middle">
+            <div class="text">  <a href=""><button style="background-color:purple;border:none;width:120px;height: 48px;opacity:0.8;color:white;">Buy Now</button></a></div>
+           </div>
+           
+           </div>
+          
+           <div class="card-body">
+            <center>Adhesive Tape</center>
+           </div>
+         </div>
+        </div>
+
+        <div class="container col-lg-3 col-md-4 col-sm-6 col-6 zoom bot">
+          <div class="card "  style="width: 100%; ">
+           <div class="card-img-top">
+             <img src="all products/scrap.jpg" class="image" style="height: 200px;width:100%;">
+               <div class="corner"><a href=""><button style="border:none; background-color: transparent;"><img src="symbols/cart.png" width="60px" height="60px" ></button></a> </div>
+            <div class="middle">
+            <div class="text"> <a href=""><button style="background-color:purple;border:none;width:120px;height: 48px;opacity:0.8;color:white;">Buy Now</button></a></div>
+           </div>
+
+           <div class="card-body">
+            <center>Scrap Book</center>
+           </div>
+           </div>
+         </div>
+        </div>
+
+        <div class="container col-lg-3 col-md-4 col-sm-6 col-6 zoom bot" >
+          <div class="card "  style="width: 100%; ">
+           <div class="card-img-top">
+             <img src="all products/camlin.jpeg" class="image" style="height: 200px;width:100%;">
+              <div class="corner"><a href=""><button style="border:none; background-color: transparent;"><img src="symbols/cart.png" width="60px" height="60px" ></button></a> </div>
+              <div class="middle">
+            <div class="text"> <a href=""><button style="background-color:purple;border:none;width:120px;height: 48px;opacity:0.8;color:white;">Buy Now</button></a></div>
+           </div>
+           
+           </div>
+          
+           <div class="card-body">
+            <center>Camlin Geometry Box</center>
+           </div>
+         </div>
+        </div>
+
+        <div class="container col-lg-3 col-md-4 col-sm-6 col-6 zoom bot">
+          <div class="card "  style="width: 100%; ">
+           <div class="card-img-top">
+             <img src="all products/a3.jpg" class="image" style="height: 200px;width:100%;">
+              
+              <div class="corner"><a href=""><button style="border:none; background-color: transparent;"><img src="symbols/cart.png" width="60px" height="60px" ></button></a> </div>
+              <div class="middle">
+            <div class="text"> <a href=""><button style="background-color:purple;border:none;width:120px;height: 48px;opacity:0.8;color:white;">Buy Now</button></a></div>
+           </div>
+           
+           </div>
+          
+           <div class="card-body">
+            <center>A-3 Sheets (set of 500)</center>
+           </div>
+         </div>
+        </div>
+
+
+
+
+
+
+</div>
+</div>
+
+
+    <!-- SALE -->
+    <div style="padding: 0; background-image: linear-gradient(to top left,red,orange,yellow,orange, red);">
+      <marquee><h1>SALE!!!&nbsp;&nbsp;&nbsp;SALE!!!&nbsp;&nbsp;&nbsp;SALE!!!&nbsp;&nbsp;&nbsp;SALE!!!&nbsp;&nbsp;&nbsp;SALE!!!&nbsp;&nbsp;&nbsp;SALE!!!&nbsp;&nbsp;&nbsp; SALE!!! &nbsp;&nbsp;&nbsp;SALE!!!&nbsp;&nbsp;&nbsp;SALE!!!&nbsp;&nbsp;&nbsp;SALE!!!&nbsp;&nbsp;&nbsp;SALE!!!&nbsp;&nbsp;&nbsp;SALE!!!</h1></marquee></div>
+
+<br>
+    <div class="container-fluid">
+
+<!-- ROW 1 -->
+
+    <div class="row">
+      <div class=" col-lg-2 col-md-4    col-sm-6 col-6" >
+          <a href=""><img src="sale/s3.jpg" class="zoom" style="border-radius: 50%;height: 150px; "></a>
+      </div>
+       <div class="col-lg-2 col-md-4  col-sm-6 col-6" >
+             <a href=""><img src="sale/s4.jpg" class="zoom" style="border-radius: 50%; height: 150px;"></a>
+      </div>
+       <div class="col-lg-2 col-md-4   col-sm-6 col-6" >
+           <a href=""><img src="sale/s5.jpg" class="zoom" style="border-radius: 50%; height: 150px;"></a>
+      </div>
+       <div class="col-lg-2 col-md-4  col-sm-6 col-6" >
+            <a href=""><img src="sale/s6.jpg" class="zoom" style="border-radius: 50%; height: 150px;"></a>
+      </div>
+       <div class="col-lg-2 col-md-4  col-sm-6 col-6" >
+            <a href=""><img src="sale/s7.jpeg" class="zoom" style="border-radius: 50%;height: 150px;"></a>
+      </div>
+       <div class="col-lg-2 col-md-4   col-sm-6 col-6" >
+           <a href=""><img src="sale/s8.jpg" class="zoom" style="border-radius: 50%; height: 150px;"></a>
+      </div>
+    </div>
+
+<!-- Middle -->
+
+    <div class="row" style="margin-top: 10px;">
+      <div class=" col-lg-2 col-md-4    col-sm-12 col-12" >
+        <center>  <a href=""><img src="sale/s1.png" class="zoom" style="border-radius: 50%;height: 150px;"></a><br>
+           <a href=""><img src="sale/s9.jpg" class="zoom" style="border-radius: 50%;height: 150px;margin-top: 10px;"></a>
+          </center>
+      </div>
+       <div class="col-lg-8 col-md-4   col-sm-12 col-12" >
+          <center><a href=""><img src="sale/sale.jpg" style="border-radius: 15%;width: 90%; height: 300px;"></a></center>
+      </div>
+       <div class="col-lg-2 col-md-4   col-sm-12 col-13" >
+           <center>
+           <a href=""><img src="sale/s2.jpg" class="zoom" style="border-radius: 50%; height: 150px;"></a><br>
+           <a href=""><img src="sale/s10.jpg" class="zoom" style="border-radius: 50%;height: 150px;margin-top:10px; "></a>
+         </center>
+      </div>
+     </div>
+
+
+
+<!-- ROW 3 -->
+
+    <div class="row" style="margin-top: 10px;">
+      <div class=" col-lg-2 col-md-4    col-sm-6 col-6" >
+          <a href=""><img src="sale/s11.jpg" class="zoom" style="border-radius: 50%;height: 150px;"></a>
+      </div>
+       <div class="col-lg-2 col-md-4  col-sm-6 col-6" >
+             <a href=""><img src="sale/s12.jpg" class="zoom" style="border-radius: 50%; height: 150px;"></a>
+      </div>
+       <div class="col-lg-2 col-md-4   col-sm-6 col-6" >
+           <a href=""><img src="sale/s13.jpg" class="zoom" style="border-radius: 50%; height: 150px;"></a>
+      </div>
+       <div class="col-lg-2 col-md-4  col-sm-6 col-6" >
+            <a href=""><img src="sale/s14.jpg" class="zoom" style="border-radius: 50%; height: 150px;"></a>
+      </div>
+       <div class="col-lg-2 col-md-4  col-sm-6 col-6" >
+            <a href=""><img src="sale/s15.jpg" class="zoom" style="border-radius: 50%;height: 150px;"></a>
+      </div>
+       <div class="col-lg-2 col-md-4   col-sm-6 col-6" >
+           <a href=""><img src="sale/s16.jpg" class="zoom" style="border-radius: 50%; height: 150px;"></a>
+      </div>
+    </div>
+</div>
+            <br><br><br>
+<!-- JUMBOTRON -->
+  <div class="jumbotron jumbotron-fluid" style="background-image: linear-gradient(rgba(255, 84, 71),rgba(183, 196, 0, 0.4));opacity: 85%;box-shadow: 2px 2px 5px black;">
+  <div class="container-fluid" style="height: 200px;">
+    <div class="row ">
+      <div class="col-12" style="margin-top:-100px; " >
+       <p style="font-size: 180%;text-align: center;padding:70px;">This Is What Our Customers Say About Us.</p>
+      </div>
+    </div>
+    <div class="row">  
+      <div class="col-2"></div>
+      <div class="col-8" style="border:2px ridge green; overflow: scroll;height:200px; background-color:#f0f0f0 ;opacity:80%;margin-top:-70px;box-shadow: 2px 2px 5px black; ">
+        <img src="avatars/1.png" style="width: 50px;height:50px;padding:2px;  "><span style="font-size: 140%;padding:20px;font-weight: bold;">Divyam Singh</span><br><br>
+          <p>This is one of the best sites that I have visited, i loved the service and the product's quality was very good. </p><hr>
+          <img src="avatars/2.png" style="width: 50px;height:50px;padding:2px;  "><span style="font-size: 140%;padding:20px;font-weight: bold;">Danish Mahajan</span><br><br>
+          <p>Just ordered some notebooks from this site, very fast delivery.its very nice and easy to use. </p><hr>
+           <img src="avatars/3.png" style="width: 50px;height:50px;padding:2px;  "><span style="font-size: 140%;padding:20px;font-weight: bold;">Priyanka Sharma</span><br><br>
+          <p>all the products I ordered were of good quality, i always order all of my groceries from here, it was my first time buying a stationary product from here and it was again great as expexted. </p><hr>
+      </div>
+    </div>
+  
+  </div>
+</div>
+
+
+			<!-- Columns -->
+			<br>
+<br>
+
+
+<div class="container">
+  <div class="row" style="border: 5px ridge purple; border-left: none; border-right: none;">
+    <div class="col-md-4">
+      <h3 style="font-weight: bold;color: white;">FREE SHIPPING</h3>
+      <p style="color: white;">Free shipping is a marketing tactic used primarily by online vendors and mail-order catalogs as a sales strategy to attract customers.Free shipping is a marketing tactic used primarily by online vendors.</p>
+    </div>
+
+      <div class="col-md-4">
+      <h3 style="font-weight: bold;color: white;">ONLINE SHOOPING</h3>
+      <p style="color: white;">Online shopping is a marketing tactic used primarily by online vendors and mail-order catalogs as a sales strategy to attract customers.Free shipping is a marketing tactic used primarily by online vendors.</p>
+    </div>
+
+      <div class="col-md-4">
+      <h3 style="font-weight: bold;color: white;">MONEY BACK</h3>
+      <p style="color: white;">Money back is a marketing tactic used primarily by online vendors and mail-order catalogs as a sales strategy to attract customers.Free shipping is a marketing tactic used primarily by online vendors.</p>
+    </div>
+  </div>
+  
+</div> <br><br>
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-lg-3 col-md-3 col-sm-3" style="border:0px black solid;">
+      <center><img src="icons/apsara.png" style=";height:100px;width: 100px;   " ></center>
+    </div>
+
+     <div class="col-lg-3 col-md-3 col-sm-3" style="border:0px black solid;">
+       <center><img src="icons/camk.png" style="height:100px;   "></center>
+    </div>
+
+    
+     <div class="col-lg-3 col-md-3 col-sm-3" style="border:0px black solid;">
+      <center><img src="icons/natraj.png"style="height:100px; width: 100px;"></center>
+    </div>
+
+    
+    <div class="col-lg-3 col-md-3 col-sm-3" style="border:0px solid black;">
+     <center><img src="icons/class.png"style="height:50px;width: 100px;margin-top: 25px; "></center>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid">
+  <div class="row">
+     <div class="col-lg-2 col-md-2 col-sm-0  col-0"></div> 
+     <div class="col-lg-2 col-md-2 col-sm-12 col-12" style="border:0px solid black;">
+     <center><img src="icons/cello.png"  style="height: 90px;width: 100px;margin-top:30px; "></center> 
+    </div>
+
+    <div class="col-lg-1 col-md-1"></div>
+
+     <div class="col-lg-2 col-md-2 col-sm-12 col-12" style="border:0px solid black;">
+      <center><img src="icons/parker.png"  style="height: 100px;width: 120px; margin-top: 20px;"></center> 
+    </div>
+
+     <div class="col-lg-1 col-md-1"></div>
+
+    <div class="col-lg-2 col-md-2 col-sm-12 col-12" style="border:0px solid black;">
+      <center><img src="icons/nav.png"  style="height: 120px;width: 100px;margin-top: 10px;"></center> 
+    </div>
+    <div class="col-lg-2 col-md-2 col-sm-0 col-0"></div> 
+
+  </div>
+</div>
+
+
+
+
+
+              <!-- Footer -->
+
+
+<footer class="page-footer font-small indigo" style="margin-top: 55px;" >
+
+  <!-- Footer Links -->
+  <div class="container-fluid text-center" style="background-color:indigo;opacity: 0.85;">
+
+    <!-- Grid row -->
+    <div class="row">
+
+      <!-- Grid column -->
+      <div class="col-md-3 mx-auto">
+
+        <!-- Links -->
+        <h5 class="font-weight-bold text-uppercase mt-3 mb-4" style="color: black;">imp Links</h5>
+
+        <ul class="list-unstyled" style="color: white;">
+            <li>
+            <a style="color: white;" href="#!">About US</a>
+          </li>
+          <li>
+            <a style="color: white;" href="#!">Contact Us</a>
+          </li>
+          <li>
+            <a style="color: white;" href="#!">Success story</a>
+          </li>
+          <li>
+            <a style="color: white;" href="#!">Services</a>
+          </li>
+          
+        </ul>
+
+      </div>
+      <!-- Grid column -->
+
+      <hr class="clearfix w-100 d-md-none">
+
+      <!-- Grid column -->
+      <div class="col-md-3 mx-auto">
+
+        <!-- Links -->
+        <h5 class="font-weight-bold text-uppercase mt-3 mb-4" style="color: black;">Ownshop</h5>
+
+        <ul class="list-unstyled" style="color: white;">
+            <li>
+            <a style="color: white;" href="#!">Jobs</a>
+          </li>
+          <li>
+            <a style="color: white;" href="#!">Term & condition</a>
+          </li>
+          <li>
+            <a style="color: white;" href="#!">Privacy Policy</a>
+          </li>
+          <li>
+            <a style="color: white;" href="#!">Our parteners</a>
+          </li>
+        
+        </ul>
+
+      </div>
+      <!-- Grid column -->
+
+      <hr class="clearfix w-100 d-md-none">
+
+      <!-- Grid column -->
+      <div class="col-md-3 mx-auto">
+
+        <!-- Links -->
+        <h5 class="font-weight-bold text-uppercase mt-3 mb-4" style="color: black;">Mazor Cities</h5>
+
+        <ul class="list-unstyled" style="color: white;">
+            <li>
+            <a style="color: white;" href="#!">Delhi</a>
+          </li>
+          <li>
+            <a style="color: white;" href="#!">Patna</a>
+          </li>
+          <li>
+            <a style="color: white;" href="#!">Amritsar</a>
+          </li>
+          <li>
+            <a style="color: white;" href="#!">Mumbai</a>
+          </li>
+        
+        </ul>
+
+      </div>
+      <!-- Grid column -->
+
+      <hr class="clearfix w-100 d-md-none">
+
+      <!-- Grid column -->
+      <div class="col-md-3 mx-auto">
+
+        <!-- Links -->
+        <h3 class="font-weight-bold text-uppercase mt-3 mb-4" style="color: black;">Contact Detail</h3>
+
+
+                                
+                                
+                                <h5 style="color: black;" class="title-median">Ownshop Pvt. Ltd.</h5>
+                                <p><b style="color: black;">Email id:</b> <a style="color: black;" href="mailto:info@webenlance.com">srjrnw3@gmail.com</a></p>
+                               <!--  <p><b>Helpline Numbers </b> -->
+
+    <b style="color:#ffc106;">(8AM to 10PM):</b><p style="color: black;">  8130890090, +91-8130190010  </p>
+    
+    <!-- <p><b>Corp Office / Postal Address</b></p> -->
+    <!-- <p><b>Phone Numbers : </b>7042827160, </p>
+    <p> 011-27568832, 9868387223</p> -->
+                                
+
+       <!--  <ul class="list-unstyled">
+          <li>
+            <a style="color: white;" href="#!">Link 1</a>
+          </li>
+          <li>
+            <a style="color: white;" href="#!">Link 2</a>
+          </li>
+          <li>
+            <a style="color: white;" href="#!">Link 3</a>
+          </li>
+          <li>
+            <a style="color: white;" href="#!">Link 4</a>
+          </li>
+        </ul> -->
+
+      </div>
+      <!-- Grid column -->
+
+    </div>
+    <!-- Grid row -->
+
+  </div>
+  <!-- Footer Links -->
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3" style="background-color:indigo;color: black;">© 2020 Copyright:
+    <a href="https://mdbootstrap.com/" style="color: white;">Ownshop.com</a>
+  </div>
+  <!-- Copyright -->
+
+</footer>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</body>
+</html>
